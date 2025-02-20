@@ -1,0 +1,10 @@
+.title{
+    font-size: 20pt;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое создание колонок */
+    gap: 10px; /* Расстояние между элементами */
+    padding: 3px;
+    border-radius: 8px;
+}

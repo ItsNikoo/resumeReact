@@ -1,0 +1,17 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: 100px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #cacaca; /* Серая рамка */
+    border-radius: 12px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
