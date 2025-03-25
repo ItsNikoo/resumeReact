@@ -1,13 +1,18 @@
 import Index from "../DefaultContainer";
-import data from "./links.ts"
 import styles from "./Footer.module.css"
 
-export default function Footer(){
+interface Links {
+    links: string[]
+}
+
+export default function Footer({links}: Links) {
     return (
         <Index title={"Полезные ссылки"}>
-            <ul className={styles.list}>
-                {data.map((item,index)=>{
-                    return <li key={index}>{item}</li>;
+            <ul className={styles.List}>
+                {links.map((item,index)=>{
+                    return <li key={index} className={styles.ListItem}>
+                        <a href={`${item}`}>{item}</a>
+                    </li>;
                 })}
             </ul>
         </Index>

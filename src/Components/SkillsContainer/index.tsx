@@ -1,14 +1,17 @@
 import styles from "./SkillsContainer.module.css"
-import data from "./skills.ts"
 import Index from "../DefaultContainer";
 
-export default function SkillsContainer(){
+interface Props{
+    skills: string[]
+}
+
+export default function SkillsContainer({skills}: Props){
     return(
         <Index title={"Навыки"}>
             <div className={styles.gridContainer}>
-                {data.map((item,index) => {
+                {skills.map((item,index) => {
                     return (
-                        <div key={index}>{item}</div>
+                        <div className={styles.SkillCard} key={index}>{item}</div>
                     )
                 })}
             </div>

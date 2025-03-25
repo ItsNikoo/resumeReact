@@ -1,27 +1,32 @@
 import Index from "../DefaultContainer";
-import data from "./education.ts";
 import styles from "./EducationContainer.module.css";
 
-export default function EducationContainer() {
+interface Place {
+    id: number;
+    primary: boolean;
+    education: string;
+    grade: string;
+    year: number;
+}
+
+interface Props {
+    education: Place[];
+}
+
+export default function EducationContainer({education}: Props) {
     return (
         <Index title="Образование">
-            {data.map((education) => {
-                const educationInfo = [
-                    education.education,
-                    education.grade,
-                    education.year,
-                ]
-                    .filter(Boolean)
-                    .join(", ");
-
-                return (
-                    <div key={education.id}>
-                        <h1 className={education.primary ? styles.primary : styles.secondary}>
-                            {educationInfo}
-                        </h1>
-                    </div>
-                );
-            })}
+            <div className={styles.EducationContainer}>
+                {education.map((education) => {
+                    return (
+                        <div className={`${styles.EducationCard} ${education.primary ? styles.Primary : styles.Secondary}`} key={education.id}>
+                            <h1 className={styles.Education}>{education.education}</h1>
+                            <h3 className={styles.Grade}>{education.grade}</h3>
+                            <p className={styles.Year}>{education.year}</p>
+                        </div>
+                    );
+                })}
+            </div>
         </Index>
     );
 }

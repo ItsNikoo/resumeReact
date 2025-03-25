@@ -1,6 +1,5 @@
 import MainContainer from "./Components/MainContainer.tsx";
 import Header from "./Components/Header";
-import Stroke from "./Components/Stroke";
 import ContactsContainer from "./Components/ContactsContainer";
 import data from "./data.ts"
 import SkillsContainer from "./Components/SkillsContainer";
@@ -13,12 +12,15 @@ function App() {
     return (
         <MainContainer>
             <Header name={"Никита Перминов"}/>
-            <Stroke />
-            <ContactsContainer street={data.street} city={data.city} number={data.number} email={data.email} />
-            <SkillsContainer/>
-            <EducationContainer/>
-            <ExperienceContainer/>
-            <Footer/>
+            <ContactsContainer
+                street={data.contacts.street}
+                city={data.contacts.city}
+                number={data.contacts.number}
+                email={data.contacts.email}/>
+            <SkillsContainer skills={data.skills}/>
+            <EducationContainer education={data.educations} />
+            <ExperienceContainer experiences={data.experiences} />
+            <Footer links={data.links} />
         </MainContainer>
     )
 }

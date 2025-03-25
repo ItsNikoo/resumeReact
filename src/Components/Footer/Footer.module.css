@@ -1,7 +1,14 @@
-.list{
+.List{
     display: flex;
     list-style: none;
     flex-direction: column;
     padding-left: 20px;
-    margin: 10px;
+    margin: 0;
+}
+.ListItem{
+    color: white;
+    font-weight: bold;
+}
+a{
+    color: white;
 }

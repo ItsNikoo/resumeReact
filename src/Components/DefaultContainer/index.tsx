@@ -8,10 +8,10 @@ interface Props {
 
 export default function Index(props: Props) {
     return (
-        <>
+        <div className={styles.Container}>
             <Stroke/>
             <div className={styles.text}>{props.title}</div>
             {props.children}
-        </>
+        </div>
     )
 }

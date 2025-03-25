@@ -1,20 +1,28 @@
-.experiencePlace {
-    color: #067500;
-    font-size: 16pt;
-}
-.years{
-    padding-left: 10px;
-    margin: 0;
-    font-weight: normal;
-    font-size: 11pt;
-}
-.list{
+.ExperienceContainer {
     display: flex;
-    list-style: none;
     flex-direction: column;
-    padding-left: 20px;
-    margin: 10px;
 }
-.achievement{
-    text-decoration: none;
+.ExperienceCard{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.Years{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.List{
+    margin: 5px;
+    list-style: none;
+}
+.ListItem{
+    font-weight: bold;
 }

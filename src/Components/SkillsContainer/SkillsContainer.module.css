@@ -1,10 +1,20 @@
 .title{
     font-size: 20pt;
+    color: white;
 }
 .gridContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое создание колонок */
-    gap: 10px; /* Расстояние между элементами */
     padding: 3px;
     border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    gap: 10px;
+}
+.SkillCard{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
