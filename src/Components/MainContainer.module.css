@@ -1,13 +1,17 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
-    width: 750px;
     margin: 100px 0;
     padding: 20px;
-    background-color: #070707;
-    border: 2px solid #171717; /* Серая рамка */
+    background-color: #eeeeee;
     border-radius: 12px; /* Скругленные углы */
     box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1); /* Тень для красоты */
+}
+
+.mainContainer:hover {
+    transition: 1s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .wrapper {

@@ -1,8 +1,9 @@
-.EducationContainer{
+.EducationContainer {
     display: grid;
     grid-template-columns:1fr 1fr;
     gap: 1rem;
 }
+
 .EducationCard {
     display: flex;
     flex-direction: column;
@@ -10,21 +11,31 @@
     padding: 5px 1rem 10px;
     border-radius: 1.5rem;
 }
+
+.EducationCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 .Education {
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
-.Grade{
+
+.Grade {
     font-size: 18px;
     font-weight: normal;
     margin: 0;
     padding: 0;
 }
-.Year{
+
+.Year {
     margin: 0;
     padding: 0;
 }
+
 .Primary {
     background-color: #e0f7fa; /* Light blue for primary education */
 }

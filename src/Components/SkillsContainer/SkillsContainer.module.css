@@ -1,20 +1,28 @@
-.title{
+.title {
     font-size: 20pt;
-    color: white;
+    color: #000000;
 }
-.gridContainer{
+
+.gridContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое создание колонок */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     padding: 3px;
     border-radius: 8px;
     color: black;
     font-weight: bold;
     gap: 10px;
 }
-.SkillCard{
+
+.SkillCard {
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 5px 10px;
     border-radius: 20px;
+}
+
+.SkillCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.4s;
 }

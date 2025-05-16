@@ -1,11 +1,11 @@
 .name{
     font-size: 50px;
-    color: white;
+    color: #000000;
 }
 .title{
-    font-size: 1.1em;
+    font-size: 18px;
     margin: 0;
     font-weight: normal;
     padding-left: 2px;
-    color: #308839;
+    color: #00700c;
 }
